@@ -16,7 +16,38 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
     // Override point for customization after application launch.
+    
+    //3.5_4inchを読み分けする
+    UIStoryboard *storyboard; // storyboardの型宣言
+    NSString * storyBoardName;
+    CGRect rect = [UIScreen mainScreen].bounds;
+    
+    if (rect.size.height == 568) {
+        storyBoardName = @"4_0";
+        NSLog(@"4.0");
+    }else if(rect.size.height ==667) {
+        storyBoardName = @"4_7";
+        NSLog(@"4.7");
+    }else if(rect.size.height ==480) {
+        storyBoardName = @"3_5";
+        NSLog(@"3_5");
+    }else{storyBoardName = @"Main";
+        NSLog(@"5_5");
+        
+    }
+    
+    storyboard = [UIStoryboard storyboardWithName:storyBoardName bundle:nil];
+    
+    UIViewController *mainViewContriller = [storyboard instantiateInitialViewController];
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = mainViewContriller;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
