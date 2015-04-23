@@ -284,6 +284,8 @@
      */
 }
 
+
+
 -(IBAction)yomikomi{
     UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
     [ipc setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];

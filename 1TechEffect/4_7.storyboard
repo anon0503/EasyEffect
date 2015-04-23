@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ex8-7R-hAU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="falconfontb_1.1.ttf">
+            <string>FalconFontB</string>
+            <string>FalconFontB</string>
+            <string>FalconFontB</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5BO-BQ-LSE">
+            <objects>
+                <viewController id="ex8-7R-hAU" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lu5-96-hzC"/>
+                        <viewControllerLayoutGuide type="bottom" id="D1l-fl-cgC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bri-wI-shP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="イージーエフェクト背景.png" translatesAutoresizingMaskIntoConstraints="NO" id="7bt-2M-0cU">
+                                <rect key="frame" x="-1" y="0.0" width="377" height="668"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="000cf1bdd048100092b212.png" translatesAutoresizingMaskIntoConstraints="NO" id="96z-qQ-fL1">
+                                <rect key="frame" x="109" y="494" width="156" height="154"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAe-wh-0Ic">
+                                <rect key="frame" x="11" y="460" width="100" height="100"/>
+                                <state key="normal" image="セピア.png">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertImage" destination="ex8-7R-hAU" eventType="touchUpInside" id="TtJ-x6-h3g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hku-5V-LuX">
+                                <rect key="frame" x="137" y="352" width="100" height="100"/>
+                                <state key="normal" image="クローム.png">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CIPhotoEffectChrome" destination="ex8-7R-hAU" eventType="touchUpInside" id="dqG-lQ-dH8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQF-O5-TI6">
+                                <rect key="frame" x="260" y="460" width="100" height="100"/>
+                                <state key="normal" image="ビンテージ.png">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CIPhotoEffectFade" destination="ex8-7R-hAU" eventType="touchUpInside" id="7eF-nv-bak"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dq4-mt-E46">
+                                <rect key="frame" x="260" y="568" width="100" height="100"/>
+                                <state key="normal" image="レトロ調.png">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CIPhotoEffectInstant" destination="ex8-7R-hAU" eventType="touchUpInside" id="sPl-MV-tvP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jj5-iG-Qsb">
+                                <rect key="frame" x="11" y="567" width="100" height="100"/>
+                                <state key="normal" image="モノクロ.png">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CIPhotoEffectNoir" destination="ex8-7R-hAU" eventType="touchUpInside" id="dnI-qy-ivf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pe-fb-rJg">
+                                <rect key="frame" x="260" y="352" width="100" height="100"/>
+                                <state key="normal" image="色の反転.png">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CIColorInvert" destination="ex8-7R-hAU" eventType="touchUpInside" id="eTU-dg-lR9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTi-nH-ceD">
+                                <rect key="frame" x="11" y="352" width="100" height="100"/>
+                                <state key="normal" image="淡いセピア.png">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CIFalseColor" destination="ex8-7R-hAU" eventType="touchUpInside" id="70x-Eg-one"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeX-GO-Nh7">
+                                <rect key="frame" x="11" y="78" width="193" height="40"/>
+                                <fontDescription key="fontDescription" name="FalconFontB" family="FalconFontB" pointSize="18"/>
+                                <state key="normal" title=" 写真を読み込む" image="21.png">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yomikomi" destination="ex8-7R-hAU" eventType="touchUpInside" id="Mb5-37-E1L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ij2-Ht-Osy">
+                                <rect key="frame" x="260" y="78" width="103" height="40"/>
+                                <fontDescription key="fontDescription" name="FalconFontB" family="FalconFontB" pointSize="18"/>
+                                <state key="normal" title=" 保存" image="1.png">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hozon" destination="ex8-7R-hAU" eventType="touchUpInside" id="05T-PY-Bvr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="app初期画面よう.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Dz-RV-Es2">
+                                <rect key="frame" x="-1" y="126" width="377" height="218"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7u-hH-VkW">
+                                <rect key="frame" x="146" y="538" width="82" height="66"/>
+                                <fontDescription key="fontDescription" name="FalconFontB" family="FalconFontB" pointSize="22"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.30401292740000002" blue="0.1822693893" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="undone" destination="ex8-7R-hAU" eventType="touchUpInside" id="kp8-Se-SVi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="アプリ.png" translatesAutoresizingMaskIntoConstraints="NO" id="gkw-ZR-KlT">
+                                <rect key="frame" x="-9" y="20" width="424" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="6Dz-RV-Es2" id="TUv-f5-TM6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tX7-Eo-SyL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172.5" y="164.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="000cf1bdd048100092b212.png" width="540" height="540"/>
+        <image name="1.png" width="50" height="40"/>
+        <image name="21.png" width="50" height="40"/>
+        <image name="app初期画面よう.png" width="1080" height="400"/>
+        <image name="アプリ.png" width="4504" height="369"/>
+        <image name="イージーエフェクト背景.png" width="1080" height="1920"/>
+        <image name="クローム.png" width="96" height="96"/>
+        <image name="セピア.png" width="99" height="99"/>
+        <image name="ビンテージ.png" width="99" height="98"/>
+        <image name="モノクロ.png" width="98" height="98"/>
+        <image name="レトロ調.png" width="96" height="96"/>
+        <image name="淡いセピア.png" width="96" height="96"/>
+        <image name="色の反転.png" width="98" height="98"/>
+    </resources>
+</document>
