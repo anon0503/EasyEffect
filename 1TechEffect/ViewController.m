@@ -21,6 +21,10 @@
 }
 
 
+
+
+
+
 -(IBAction)convertImage{    
     
 //元の画像を表示させる
